@@ -1,6 +1,6 @@
 {
   "name": "bernardosecades/php-json",
-  "description": "Encode, decode and valid json with php",
+  "description": "Encode, decode, handle errors and valid json with php",
   "type": "library",
   "keywords": ["php", "json", "encode", "decode"],
   "license": "MIT",
