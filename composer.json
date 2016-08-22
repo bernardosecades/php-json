@@ -1,0 +1,34 @@
+{
+  "name": "bernardosecades/php-json",
+  "description": "Encode, decode and valid json with php",
+  "type": "library",
+  "keywords": ["php", "json", "encode", "decode"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bernardo Secades",
+      "email": "bernardosecades@gmail.com",
+      "homepage": "https://github.com/bernardosecades",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "bernardosecades@gmail.com",
+    "issues": "https://github.com/bernardosecades/php-json/issues",
+    "source": "https://github.com/bernardosecades/php-json"
+  },
+  "require": {
+    "ext-json": "*",
+    "ext-spl": "*",
+    "php": ">=5.5",
+    "myclabs/php-enum": "^1.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.8"
+  },
+  "autoload": {
+    "psr-4": {
+      "BernardoSecades\\Json\\": "src/"
+    }
+  }
+}
