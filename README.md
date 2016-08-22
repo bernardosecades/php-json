@@ -6,7 +6,7 @@
 
 ## Why?
 
-Mainly to handle errors json encode/decode and encapsulated options to encode easily. 
+Mainly to handle errors json encode/decode and encapsulate options to encode easily. 
 
 
 ## Usage
@@ -44,6 +44,7 @@ Json::encode($value, $options);
 ```php
 use BernardoSecades\Json\Json;
 use BernardoSecades\Json\DecodeException;
+use BernardoSecades\Json\EncodeException;
 
 ...
 
@@ -57,6 +58,12 @@ try {
 
 if (!Json::isValid($value)) {
    // do something
+}
+
+try {
+    Json::encode($value);
+} catch (EncodeException $exception) {
+ // do something
 }
 
 ```
