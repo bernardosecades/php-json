@@ -31,9 +31,9 @@ use BernardoSecades\Json\ArrayOption;
 ...
 
 $options = new ArrayOption();
-$options[] = Option::JSON_UNESCAPED_UNICODE;
-$options[] = Option::JSON_UNESCAPED_SLASHES;
-$options[] = Option::JSON_NUMERIC_CHECK;
+$options[] = Option::JSON_UNESCAPED_UNICODE(); // Use enum object
+$options[] = Option::JSON_UNESCAPED_SLASHES();
+$options[] = Option::JSON_NUMERIC_CHECK();
 
 Json::encode($value, $options);
 
