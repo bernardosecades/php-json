@@ -4,6 +4,7 @@
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/bernardosecades/php-json/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/bernardosecades/php-json/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/bernardosecades/php-json/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/bernardosecades/php-json/code-structure/master)
 [![License](https://poser.pugx.org/bernardosecades/php-json/license)](https://packagist.org/packages/bernardosecades/php-json)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/8e70a11b-7e0d-4683-8fab-68af1205b2a6/mini.png)](https://insight.sensiolabs.com/projects/8e70a11b-7e0d-4683-8fab-68af1205b2a6)
 
 
 ## Why?
