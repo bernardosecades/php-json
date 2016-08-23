@@ -109,16 +109,19 @@ class ArrayOption implements \ArrayAccess, \Countable
             return $option->getValue();
         }
 
-        $values = array_map(function (Option $option) {
+        /** @var Option $firstOption */
+        $firstOption = $this->options[0];
+        $bitwiseResult  = $firstOption->getValue();
+        $options = array_slice($this->options, 1);
+
+        /** @var Option $option */
+        foreach ($options as $option) {
             if (Option::JSON_NONE === $option->getValue()) {
-                return null;
+                continue;
             }
-            return $option->getValue();
-        }, $this->options);
+            $bitwiseResult = $bitwiseResult | $option->getValue();
+        }
 
-        // remove null values
-        $values = array_filter($values, 'strlen');
-
-        return eval(sprintf('return %s;', implode(' | ', $values)));
+        return $bitwiseResult;
     }
 }
