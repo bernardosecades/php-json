@@ -14,7 +14,6 @@
  *
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
-
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -48,7 +47,7 @@ class ArrayOption implements \ArrayAccess, \Countable
      */
     public function offsetGet($index)
     {
-        if($this->offsetExists($index)) {
+        if ($this->offsetExists($index)) {
             return $this->options[$index];
         }
 
@@ -111,7 +110,7 @@ class ArrayOption implements \ArrayAccess, \Countable
 
         /** @var Option $firstOption */
         $firstOption = $this->options[0];
-        $bitwiseResult  = $firstOption->getValue();
+        $bitwiseResult = $firstOption->getValue();
         $options = array_slice($this->options, 1);
 
         /** @var Option $option */
